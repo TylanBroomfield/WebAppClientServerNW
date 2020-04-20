@@ -27,10 +27,10 @@ namespace WebApp.Pages
                 Controller01 sysmgr = new Controller01();
                 List<Entity01> info = null;
                 info = sysmgr.List();
-                info.Sort((x, y) => x.CategoryName.CompareTo(y.CategoryName));
+                info.Sort((x, y) => x.TeamName.CompareTo(y.TeamName));
                 List01.DataSource = info;
-                List01.DataTextField = nameof(Entity01.CategoryName);
-                List01.DataValueField = nameof(Entity01.CategoryID);
+                List01.DataTextField = nameof(Entity01.TeamName);
+                List01.DataValueField = nameof(Entity01.TeamID);
                 List01.DataBind();
                 List01.Items.Insert(0, "select...");
             }
@@ -52,17 +52,18 @@ namespace WebApp.Pages
                     Controller01 sysmgr01 = new Controller01();
                     Entity01 info01 = null;
                     info01 = sysmgr01.FindByPKID(int.Parse(List01.SelectedValue));
-                    IDLabel01.Text = "Category ID:";
-                    IDLabel02.Text = info01.CategoryID.ToString();
-                    NameLabel01.Text = "Category Name:";
-                    NameLabel02.Text = info01.CategoryName;
-                    DescriptionLabel01.Text = "Category Description:";
-                    DescriptionLabel02.Text = info01.Description;
-
+                    NameLabel01.Text = "Coach:";
+                    NameLabel02.Text = info01.Coach;
+                    DescriptionLabel01.Text = "Assistant Coach:";
+                    DescriptionLabel02.Text = info01.AssistantCoach;
+                    IDLabel01.Text = "Wins:";
+                    IDLabel02.Text = info01.Wins.ToString();
+                    IDLabel201.Text = "Losses:";
+                    IDLabel202.Text = info01.Losses.ToString();
                     Controller02 sysmgr02 = new Controller02();
                     List<Entity02> info02 = null;
                     info02 = sysmgr02.FindByID(int.Parse(List01.SelectedValue));
-                    info02.Sort((x, y) => x.ProductName.CompareTo(y.ProductName));
+                    info02.Sort((x, y) => x.FirstAndLast.CompareTo(y.FirstAndLast));
                     List02.DataSource = info02;
                     List02.DataBind();
                 }

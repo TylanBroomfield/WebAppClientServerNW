@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApp.Pages
-{
-
-
-    public partial class _40ASPControlsMultiRecordDropdownToCustomGridView
-    {
-
+namespace WebApp.Pages {
+    
+    
+    public partial class _40ASPControlsMultiRecordDropdownToCustomGridView {
+        
         /// <summary>
         /// Label1 control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace WebApp.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
-
+        
         /// <summary>
         /// List01 control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace WebApp.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList List01;
-
+        
         /// <summary>
         /// Fetch control.
         /// </summary>
@@ -40,25 +38,7 @@ namespace WebApp.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Fetch;
-
-        /// <summary>
-        /// IDLabel01 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label IDLabel01;
-
-        /// <summary>
-        /// IDLabel02 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label IDLabel02;
-
+        
         /// <summary>
         /// NameLabel01 control.
         /// </summary>
@@ -67,7 +47,7 @@ namespace WebApp.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label NameLabel01;
-
+        
         /// <summary>
         /// NameLabel02 control.
         /// </summary>
@@ -76,7 +56,7 @@ namespace WebApp.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label NameLabel02;
-
+        
         /// <summary>
         /// DescriptionLabel01 control.
         /// </summary>
@@ -85,7 +65,7 @@ namespace WebApp.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label DescriptionLabel01;
-
+        
         /// <summary>
         /// DescriptionLabel02 control.
         /// </summary>
@@ -94,7 +74,43 @@ namespace WebApp.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label DescriptionLabel02;
-
+        
+        /// <summary>
+        /// IDLabel01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label IDLabel01;
+        
+        /// <summary>
+        /// IDLabel02 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label IDLabel02;
+        
+        /// <summary>
+        /// IDLabel201 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label IDLabel201;
+        
+        /// <summary>
+        /// IDLabel202 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label IDLabel202;
+        
         /// <summary>
         /// MessageLabel control.
         /// </summary>
@@ -103,7 +119,7 @@ namespace WebApp.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label MessageLabel;
-
+        
         /// <summary>
         /// List02 control.
         /// </summary>

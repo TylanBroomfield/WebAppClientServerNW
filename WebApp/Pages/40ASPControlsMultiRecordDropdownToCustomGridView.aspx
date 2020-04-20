@@ -9,14 +9,6 @@
     </div>
     <div class="row">
         <div class="col-md-4 text-right">
-            <asp:Label ID="IDLabel01" runat="server" ></asp:Label>
-        </div>
-        <div class="col-md-4 text-left">
-            <asp:Label ID="IDLabel02" runat="server" ></asp:Label>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4 text-right">
             <asp:Label ID="NameLabel01" runat="server" ></asp:Label>
         </div>
         <div class="col-md-4 text-left">
@@ -29,6 +21,22 @@
         </div>
         <div class="col-md-4 text-left">
             <asp:Label ID="DescriptionLabel02" runat="server" ></asp:Label>
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-md-4 text-right">
+            <asp:Label ID="IDLabel01" runat="server" ></asp:Label>
+        </div>
+        <div class="col-md-4 text-left">
+            <asp:Label ID="IDLabel02" runat="server" ></asp:Label>
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-md-4 text-right">
+            <asp:Label ID="IDLabel201" runat="server" ></asp:Label>
+        </div>
+        <div class="col-md-4 text-left">
+            <asp:Label ID="IDLabel202" runat="server" ></asp:Label>
         </div>
     </div>
     <div class="row">
@@ -45,46 +53,46 @@
             OnPageIndexChanging="List02_PageIndexChanging" PageSize="5">
 
             <Columns>
-                <asp:TemplateField HeaderText="ID" Visible="True">
+                <asp:TemplateField HeaderText="Name" Visible="True">
                     <ItemStyle HorizontalAlign="Left"></ItemStyle>
                     <ItemTemplate>
-                        <asp:Label ID="ProductID" runat="server" 
-                            Text='<%# Eval("ProductID") %>'>
+                        <asp:Label ID="FirstAndLast" runat="server" 
+                            Text='<%# Eval("FirstAndLast") %>'>
                         </asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="Product">
+                <asp:TemplateField HeaderText="Age">
                     <ItemStyle HorizontalAlign="Left"></ItemStyle>
                     <ItemTemplate>
-                        <asp:Label ID="ProductName" runat="server" 
-                            Text='<%# Eval("ProductName") %>'>
+                        <asp:Label ID="Age" runat="server" 
+                            Text='<%# Eval("Age") %>'>
                         </asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="Qty/Per">
+                <asp:TemplateField HeaderText="Gender">
                     <ItemStyle HorizontalAlign="Left"></ItemStyle>
                      <ItemTemplate>
                         <asp:Label ID="QuantityPerUnit" runat="server" 
-                            Text='<%# Eval("QuantityPerUnit") == null ? "each" : Eval("QuantityPerUnit") %>'>
+                            Text='<%# Eval("Gender") %>'>
                         </asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="Price ($)">
+                <asp:TemplateField HeaderText="Med Alert">
                     <HeaderStyle HorizontalAlign="Right"></HeaderStyle>
                     <ItemStyle HorizontalAlign="Left"></ItemStyle>
                      <ItemTemplate>
-                        <asp:Label ID="UnitPrice" runat="server" 
-                            Text='<%# string.Format("{0:0.00}",Eval("UnitPrice"))%>'>
+                        <asp:Label ID="MedicalAlertDetails" runat="server" 
+                            Text='<%# Eval("MedicalAlertDetails")%>'>
                         </asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="Disc">
+                <%--<asp:TemplateField HeaderText="Disc">
                     <ItemStyle HorizontalAlign="Left"></ItemStyle>
                      <ItemTemplate>
                          <asp:CheckBox ID="Discontinued" runat="server" 
                               Checked='<%# Eval("Discontinued") %>'/>
                     </ItemTemplate>
-                </asp:TemplateField>
+                </asp:TemplateField>--%>
             </Columns>
             <EmptyDataTemplate>
                 no data to display
